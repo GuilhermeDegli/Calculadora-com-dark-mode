@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="calculadora.css" />
    
-  
-
     <title>Calculadora do Gui</title>
   </head>
 
@@ -30,22 +28,16 @@
 
         <table>  <tr> 
             
-            
-            
             <td> <button class="butao" onclick="clean('')"> C  </button>  </td>           
             <td> <button class="butao" onclick="back('')"> <  </button>  </td>
             <td> <button class="butao" onclick="insert('/')"> /  </button>  </td>
             <td> <button class="butao" onclick="insert('*')"> X  </button>  </td>
         
-        
-        
         </tr>
 
 
         <tr> 
-            
-            
-            
+           
             <td> <button class="butao" onclick="insert('7')"> 7  </button>  </td>           
             <td> <button class="butao" onclick="insert('8')"> 8  </button>  </td>
             <td> <button class="butao" onclick="insert('9')"> 9  </button>  </td>
@@ -64,34 +56,22 @@
             <td> <button class="butao" onclick="insert('5')"> 5  </button>  </td>
             <td> <button class="butao" onclick="insert('6')"> 6  </button>  </td>
             <td> <button class="butao" onclick="insert('+')"> +  </button>  </td>
-        
-        
-        
+  
         </tr>
 
         <tr> 
-            
-            
-            
+
             <td> <button class="butao" onclick="insert('1')"> 1  </button>  </td>           
             <td> <button class="butao" onclick="insert('2')"> 2  </button>  </td>
             <td> <button class="butao" onclick="insert('3')"> 3 </button>  </td>
            <td rowspan="2">  <button  class="butao" style="height: 106px;" onclick="calcular('')" > =  </button>   </td>
-        
-        
-        
+      
         </tr>
-
-
 
         <tr> 
             
-            
             <td colspan="2">  <button class="butao" style="width:106px" onclick="insert('0')"> 0   </button>         </td>
             <td >  <button class="butao" onclick="insert('.')"> .   </button>         </td>
-           
-        
-        
         
         </tr>
 
@@ -102,14 +82,12 @@
 
              var numero = document.getElementById('resultado').innerHTML;
              document.getElementById('resultado').innerHTML = numero + num;
-             
 
         }
         
          function clean(){
-
+           
           document.getElementById('resultado').innerHTML = "";
-
          }
 
          function back(){
@@ -120,27 +98,19 @@
 
          }
 
-            
-
           function calcular(){
-
 
             var resultado =  document.getElementById('resultado').innerHTML;
 
             if(resultado){
 
-                 
               document.getElementById('resultado').innerHTML = eval(resultado);
-
-
 
             } 
 
           }
 
         </script>
-
-
 
         </table>
       </div>
