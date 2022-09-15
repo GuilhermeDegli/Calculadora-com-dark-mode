@@ -2,6 +2,7 @@ function insert(num){
 
     var numero = document.getElementById('resultado').innerHTML;
     document.getElementById('resultado').innerHTML = numero + num;
+    
 
 }
 
@@ -16,8 +17,9 @@ function back(){
     var resultado =  document.getElementById('resultado').innerHTML;
 
       document.getElementById('resultado').innerHTML = resultado.substring(0, resultado.length-1)
-
 }
+
+   
 
  function calcular(){
 
@@ -27,7 +29,14 @@ function back(){
    if(resultado){
 
      document.getElementById('resultado').innerHTML = eval(resultado);
-
    } 
 
  }
+
+ const chk = document.getElementById('chk')
+
+chk.addEventListener('change', () => {
+  document.body.classList.toggle('dark')
+ 
+})
+
